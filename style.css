@@ -1,0 +1,329 @@
+tyle/* Basic Reset & Body */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff; /* Or a very light grey if needed */
+    position: relative; /* Needed for feedback tab positioning */
+}
+
+a {
+    color: #0077cc; /* Adjust link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h2, h3 {
+    color: #555; /* Slightly darker headings */
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: normal;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    max-width: 960px; /* Adjust based on original site width */
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Feedback Tab */
+.feedback-tab {
+    position: fixed;
+    left: -35px; /* Adjust to control how much is visible */
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+    background-color: #f0ad4e; /* Orange color */
+    color: white;
+    padding: 8px 15px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+    z-index: 100;
+}
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px; /* Adjust size */
+    font-weight: bold;
+    color: #333;
+}
+.logo img {
+    margin-right: 10px;
+}
+.logo .logo-flame { /* Style the flame part if needed */
+    color: #d9534f; /* Red/Orange for flame */
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info {
+    font-size: 14px;
+    color: #555;
+    margin-right: 20px;
+}
+
+.social-icons a {
+    font-size: 24px; /* Icon size */
+    color: #777;
+    margin-left: 5px;
+    transition: color 0.3s ease;
+}
+.social-icons a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    margin-left: 20px;
+}
+
+nav li {
+    margin-left: 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #555;
+    padding: 5px 0;
+    font-size: 12px;
+}
+nav a.active, nav a:hover {
+    color: #000;
+    border-bottom: 2px solid #5cb85c; /* Green underline for active/hover */
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    margin-bottom: 20px;
+}
+.hero-placeholder {
+    background-color: #f0f0f0;
+    height: 250px; /* Adjust height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #aaa;
+    font-size: 18px;
+    border: 1px dashed #ccc;
+    position: relative;
+}
+.slider-nav {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 14px; /* Adjust icon size */
+    color: #888;
+}
+.slider-nav span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.slider-nav span:hover {
+    background-color: #aaa;
+}
+.slider-nav i {
+    margin-left: 8px;
+    cursor: pointer;
+}
+.slider-nav i:hover {
+    color: #555;
+}
+
+
+/* Partners Section */
+.partners {
+    background-color: #333; /* Dark background */
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.partners h2 {
+    color: #fff;
+    font-size: 18px;
+    border-bottom: none;
+    margin-bottom: 10px;
+    display: inline-block; /* Keep it centered */
+    margin-right: 15px;
+}
+.partner-logos {
+    display: inline-block; /* Keep it centered */
+    vertical-align: middle;
+}
+.partner-logos img {
+    vertical-align: middle; /* Align image nicely with text */
+    /* Add filter: invert(1) brightness(2); if logo is dark on dark bg */
+}
+
+
+/* Services Section */
+.services {
+    margin-bottom: 30px;
+}
+.service-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.service-item {
+    flex-basis: 31%; /* Approx 1/3 width with some gap */
+    padding: 15px;
+    border: 1px solid #eee;
+    background-color: #f9f9f9; /* Very light grey */
+}
+.service-item h3 {
+    margin-top: 0;
+}
+.service-item p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #666;
+}
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #5cb85c; /* Green color for read more */
+    font-size: 13px;
+}
+.read-more:hover {
+    color: #4cae4c;
+    text-decoration: none;
+}
+
+/* Lower Content Area (Posts, Quote, Features) */
+.lower-content {
+    background-color: #f5f8f5; /* Light greenish background */
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #e3e8e3;
+}
+
+/* Recent Posts */
+.recent-posts-section {
+    margin-bottom: 30px;
+}
+.recent-posts-list li {
+    margin-bottom: 8px;
+}
+.recent-posts-list a {
+    color: #333; /* Darker links for posts */
+    font-size: 14px;
+}
+.recent-posts-list a:hover {
+    color: #5cb85c; /* Green hover */
+    text-decoration: none;
+}
+
+/* Quote Section */
+.quote-section {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.quote-section blockquote {
+    margin: 0;
+    font-size: 20px;
+    font-style: italic;
+    color: #777;
+}
+.quote-section blockquote::before,
+.quote-section blockquote::after {
+   content: ""; /* Remove default quotes if using blockquote tag */
+}
+
+
+/* Features & CTA Section */
+.features-cta {
+    display: flex;
+    justify-content: space-between;
+}
+.why-choose-us, .explore {
+    flex-basis: 48%; /* Roughly half each */
+}
+.why-choose-us h3, .explore h3 {
+    margin-top: 0;
+    font-weight: normal;
+    color: #555;
+}
+.why-choose-us ul li {
+    margin-bottom: 8px;
+    color: #555;
+}
+.why-choose-us ul i {
+    color: #5cb85c; /* Green checkmark */
+    margin-right: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-top: 1px solid #eee;
+    font-size: 12px;
+    color: #888;
+}
+
+/* Placeholder Images (Optional: Add if you create placeholder files) */
+/*
+img[src^="placeholder-"] {
+    background-color: #eee;
+    display: inline-block;
+    text-align: center;
+    line-height: initial;
+    color: #aaa;
+    font-size: 10px;
+    padding: 5px;
+}
+*/
